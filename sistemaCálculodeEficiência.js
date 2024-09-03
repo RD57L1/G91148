@@ -13,17 +13,17 @@ maquina.forEach(item => {
     const producao = (item.producao);
     const tempoOperacao = (item.tempoOperacao);
 
-    console.log(`Maquinario ${nome}, producao ${producao}, tempo de operacao ${tempoOperacao}`)
+    console.log(`Maquinario ${nome}, produziu ${producao} produtos, em ${tempoOperacao} horas de produção`)
 
     const mediaProducao = producao / tempoOperacao;
-    console.log(`Media de produção: ${mediaProducao}\n`);
+    var arredondado = parseFloat(mediaProducao.toFixed(2));
 
     if (mediaProducao >= 60 )
-        console.log(`${nome} está com a media de produção em ${mediaProducao} boa produtividade! .\n`);
+        console.log(`${nome} está com a media de produção em ${arredondado} boa produtividade! .\n`);
     else if (mediaProducao <60)
-        console.log(`${nome} está com a media de produção em ${mediaProducao} produtividade baixa!.\n`);
+        console.log(`${nome} está com a media de produção em ${arredondado} produtividade baixa!.\n`);
     else if (mediaProducao >= 30)
-        console.log(`${nome} está com a media de produção em ${mediaProducao} produtividade extremamente baixa alerta!!!.\n`);
+        console.log(`${nome} está com a media de produção em ${arredondado} produtividade extremamente baixa alerta!!!.\n`);
 });
 
 
