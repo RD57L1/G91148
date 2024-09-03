@@ -5,7 +5,7 @@ const maquina = [
     {nome: "máquina(D)", producao: "2000", tempoOperacao: "24" },
     {nome: "máquina(E)", producao: "900", tempoOperacao: "24" },
     {nome: "máquina(F)", producao: "500", tempoOperacao: "24" },
-]
+];
 
 console.log("\n");
 
@@ -14,7 +14,7 @@ maquina.forEach(item => {
     const producao = (item.producao);
     const tempoOperacao = (item.tempoOperacao);
 
-    console.log(`Maquinario: ${nome}, produziu ${producao} produtos, em ${tempoOperacao} horas de produção`)
+    console.log(`Maquinario: ${nome}, produziu ${producao} produtos, em ${tempoOperacao} horas de produção`);
 
     const mediaProducao = producao / tempoOperacao;
     var arredondado = parseFloat(mediaProducao.toFixed(2));
