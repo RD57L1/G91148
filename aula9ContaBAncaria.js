@@ -31,7 +31,7 @@ class ContaBancaria {
 const cliente1 = new ContaBancaria('Rodrigo Nascimento Silva', 1500.00, 2000.00);
 const cliente2 = new ContaBancaria('Clayton Silva', 2500.00, 2000.00);
 const cliente3 = new ContaBancaria('Thiago Santos', 3500.00, 2000.00);
-const cliente4 = new ContaBancaria('Felipe Lima', 000.00, 2000.00);
+const cliente4 = new ContaBancaria('Felipe Lima', 1000.00, 2000.00);
 
 
 cliente1.informacoes();
