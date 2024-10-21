@@ -1,0 +1,108 @@
+Esse código cria um servidor Node.js utilizando **Express** que recebe requisições **POST** com dados no corpo e os imprime no console. Agora, vou te guiar em como usar o **Postman** e **VS Code** para manipular esses dados.
+
+### Passo 1: Executando o Servidor no VS Code
+
+1. **Instalação de Dependências**:
+   No seu projeto no **VS Code**, crie um arquivo server.js e cole o código que você forneceu. No terminal, instale o **Express**:
+
+   bash
+   npm init -y
+   npm install express
+   
+2. **Executar o Servidor**:
+   No terminal do **VS Code**, execute o servidor:
+
+   bash
+   node server.js
+   
+   O servidor será iniciado em http://localhost:3000, e estará ouvindo requisições **POST** na rota /dados.
+
+### Passo 2: Enviar Dados Usando o Postman
+
+Agora que o servidor está rodando, você pode usar o **Postman** para enviar uma requisição **POST** com dados JSON para o servidor.
+
+1. **Abrir o Postman**.
+2. **Criar uma Nova Requisição**:
+   - Método: **POST**.
+   - URL: `http://localhost:3000/dados`.
+
+3. **Enviar Dados no Corpo da Requisição**:
+   - Vá até a aba **Body** no Postman.
+   - Selecione **raw** e **JSON** como o formato de entrada.
+   - Adicione os dados no formato JSON, como no exemplo abaixo:
+
+   json
+   {
+       "nome": "Ana",
+       "idade": 29,
+       "profissao": "Engenheira"
+   }
+   
+4. **Enviar a Requisição** clicando em **Send**.
+
+### Passo 3: Manipular os Dados Recebidos no Servidor
+
+Quando o Postman enviar a requisição, o servidor irá receber os dados JSON e os exibirá no console do **VS Code**. No código atual, ele simplesmente exibe os dados recebidos, mas você pode manipulá-los como desejar. Aqui está um exemplo de como você pode alterar o código para fazer alguma manipulação:
+
+#### Exemplo de Manipulação no Servidor:
+javascript
+const express = require('express');
+const app = express();
+const port = 3000;
+
+app.use(express.json());
+
+app.post('/dados', (req, res) => {
+    const usuarios = req.body;
+    console.log('Dados recebidos:', usuarios);
+
+    // Manipulação de dados: adicionar um novo campo
+    const usuarioComNovoCampo = {
+        ...usuarios,
+        status: 'Registrado'
+    };
+
+    console.log('Dados manipulados:', usuarioComNovoCampo);
+
+    res.json(usuarioComNovoCampo);  // Retorna os dados manipulados ao cliente (Postman)
+});
+
+app.listen(port, () => {
+  console.log(`Start server: http://localhost:${port}`);
+});
+### O que muda?
+1. O servidor agora faz uma manipulação simples: adiciona um campo "status": "Registrado" aos dados recebidos.
+2. O servidor retorna os dados manipulados como resposta JSON para o cliente (Postman).
+
+### Passo 4: Testar a Manipulação de Dados
+
+1. **No Postman**: Ao enviar a requisição **POST**, o Postman agora receberá de volta os dados manipulados.
+   
+   Se você enviar o seguinte JSON no Postman:
+
+   json
+   {
+       "nome": "Ana",
+       "idade": 29,
+       "profissao": "Engenheira"
+   }
+   
+   A resposta retornada será:
+
+   json
+   {
+       "nome": "Ana",
+       "idade": 29,
+       "profissao": "Engenheira",
+       "status": "Registrado"
+   }
+   
+2. **No Console do VS Code**: Você verá os dados recebidos e os manipulados sendo registrados:
+
+   bash
+   Dados recebidos: { nome: 'Ana', idade: 29, profissao: 'Engenheira' }
+   Dados manipulados: { nome: 'Ana', idade: 29, profissao: 'Engenheira', status: 'Registrado' }
+   
+### Conclusão
+
+Agora, você está utilizando o **VS Code** para executar um servidor que recebe e manipula dados enviados por meio de requisições **POST** no **Postman**. Isso cria um fluxo completo para manipulação de dados de maneira interativa e eficiente!

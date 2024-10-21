@@ -1,6 +1,17 @@
 {
   "dependencies": {
-    "express": "^4.21.0",
+    "-": "^0.0.1",
+    "express": "^4.21.1",
+    "g": "^2.0.1",
     "prompt-sync": "^4.2.0"
-  }
+  },
+  "name": "g91148",
+  "version": "1.0.0",
+  "description": "- Primeiro clone",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
 }

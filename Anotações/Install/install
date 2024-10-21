@@ -1,0 +1,11 @@
+Installing Express
+
+1 npm init
+2 npm install express
+
+Installing expo
+
+1 npm install --global yarn
+2 npx create-expo-app@latest StickerSmash 
+abrir pasta: cd StickerSmash
+Executar app: npx expo start
