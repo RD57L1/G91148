@@ -1,0 +1,21 @@
+Questões de Múltipla Escolha: 
+
+1) Qual das seguintes opções é a maneira correta de definir uma rota GET no Express ?
+
+resposta: a) app.get('/rota', function(req, res) { res.send('Hello World'); });
+
+2) Qual comando é usado para iniciar um servidor Express?
+
+respostas : a) node server.js e d) node app.js
+
+3) Como você pode definir uma rota que aceita parâmetros no Express ?
+
+resposta : a) app.get('/user/:id', function(req, res) { res.send(req.params.id); });
+
+4) Qual das seguintes opções é a maneira correta de testar uma rota POST usando Postman ?
+
+resposta : a) Selecionar o método POST, inserir a URL da rota, adicionar o corpo da requisição e enviar.
+
+5) Como criar uma rota que responde a qualquer método HTTP ?
+
+resposta : a) app.all('/rota', (req, res) => res.send('Olá'));
