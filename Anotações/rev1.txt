@@ -1,0 +1,85 @@
+Claro! Vamos fazer uma aula básica sobre requisições (req) e respostas (res) em JSON usando JavaScript, especialmente no contexto de um servidor Node.js com o Express.
+
+### 1. Configurando o Ambiente
+
+Primeiro, você precisa ter o Node.js instalado. Se ainda não tiver, faça o download e instale a partir do [site oficial](https://nodejs.org).
+
+### 2. Criando o Projeto
+
+1. Crie uma nova pasta para o seu projeto e navegue até ela:
+   ```bash
+   mkdir meu-projeto
+   cd meu-projeto
+   ```
+
+2. Inicialize um novo projeto Node.js:
+   ```bash
+   npm init -y
+   ```
+
+3. Instale o Express:
+   ```bash
+   npm install express
+   ```
+
+### 3. Criando o Servidor
+
+Crie um arquivo chamado `server.js` e adicione o seguinte código:
+
+```javascript
+const express = require('express');
+const app = express();
+const port = 3000;
+
+// Middleware para parsear JSON
+app.use(express.json());
+
+// Rota para receber requisições POST
+app.post('/dados', (req, res) => {
+    const dadosRecebidos = req.body; // Acessa os dados do corpo da requisição
+    console.log(dadosRecebidos);
+
+    // Envia uma resposta em JSON
+    res.json({
+        mensagem: 'Dados recebidos com sucesso!',
+        dados: dadosRecebidos
+    });
+});
+
+// Inicia o servidor
+app.listen(port, () => {
+    console.log(`Servidor rodando em http://localhost:${port}`);
+});
+```
+
+### 4. Testando a API
+
+1. Inicie o servidor:
+   ```bash
+   node server.js
+   ```
+
+2. Agora, você pode testar a API usando uma ferramenta como o Postman ou o cURL. Vamos usar o Postman como exemplo:
+
+   - Abra o Postman.
+   - Crie uma nova requisição do tipo **POST**.
+   - Insira a URL: `http://localhost:3000/dados`.
+   - No corpo da requisição (body), selecione **raw** e escolha **JSON**. Insira algo como:
+     ```json
+     {
+         "nome": "João",
+         "idade": 30
+     }
+     ```
+   - Clique em **Send**.
+
+### 5. O que acontece?
+
+- Quando você envia a requisição, o Express processa o corpo da requisição e o converte em um objeto JavaScript.
+- O servidor imprime os dados recebidos no console e responde com um objeto JSON que contém uma mensagem e os dados que você enviou.
+
+### 6. Conclusão
+
+Parabéns! Você criou uma API simples em Node.js que recebe e responde com JSON. A partir daqui, você pode expandir sua API adicionando mais rotas, conectando a um banco de dados e manipulando dados conforme necessário.
+
+Se precisar de mais alguma coisa ou tiver dúvidas, é só avisar!

@@ -1,0 +1,134 @@
+Claro! Vamos explorar mais alguns exemplos de como trabalhar com requisições e respostas em JSON usando Express. Vou incluir exemplos de GET, PUT e DELETE.
+
+### 1. Adicionando mais rotas ao servidor
+
+Vamos expandir o `server.js` para incluir exemplos de requisições GET, PUT e DELETE.
+
+```javascript
+const express = require('express');
+const app = express();
+const port = 3000;
+
+// Middleware para parsear JSON
+app.use(express.json());
+
+let usuarios = []; // Array para armazenar os usuários
+
+// Rota para receber requisições POST
+app.post('/usuarios', (req, res) => {
+    const novoUsuario = req.body;
+    usuarios.push(novoUsuario); // Adiciona o novo usuário ao array
+    res.status(201).json({
+        mensagem: 'Usuário criado com sucesso!',
+        usuario: novoUsuario
+    });
+});
+
+// Rota para obter todos os usuários (GET)
+app.get('/usuarios', (req, res) => {
+    res.json(usuarios); // Retorna a lista de usuários
+});
+
+// Rota para obter um usuário específico (GET)
+app.get('/usuarios/:nome', (req, res) => {
+    const nome = req.params.nome;
+    const usuario = usuarios.find(u => u.nome === nome);
+
+    if (usuario) {
+        res.json(usuario);
+    } else {
+        res.status(404).json({ mensagem: 'Usuário não encontrado' });
+    }
+});
+
+// Rota para atualizar um usuário (PUT)
+app.put('/usuarios/:nome', (req, res) => {
+    const nome = req.params.nome;
+    const usuarioAtualizado = req.body;
+    let usuario = usuarios.find(u => u.nome === nome);
+
+    if (usuario) {
+        Object.assign(usuario, usuarioAtualizado); // Atualiza os dados do usuário
+        res.json({
+            mensagem: 'Usuário atualizado com sucesso!',
+            usuario
+        });
+    } else {
+        res.status(404).json({ mensagem: 'Usuário não encontrado' });
+    }
+});
+
+// Rota para deletar um usuário (DELETE)
+app.delete('/usuarios/:nome', (req, res) => {
+    const nome = req.params.nome;
+    const index = usuarios.findIndex(u => u.nome === nome);
+
+    if (index !== -1) {
+        usuarios.splice(index, 1); // Remove o usuário do array
+        res.json({ mensagem: 'Usuário deletado com sucesso!' });
+    } else {
+        res.status(404).json({ mensagem: 'Usuário não encontrado' });
+    }
+});
+
+// Inicia o servidor
+app.listen(port, () => {
+    console.log(`Servidor rodando em http://localhost:${port}`);
+});
+```
+
+### 2. Testando as novas rotas
+
+Agora, você pode testar as novas rotas usando o Postman ou outra ferramenta. Aqui estão os exemplos de como fazer cada tipo de requisição:
+
+#### a. Criar um Usuário (POST)
+
+- **URL:** `http://localhost:3000/usuarios`
+- **Método:** POST
+- **Corpo (JSON):**
+  ```json
+  {
+      "nome": "Maria",
+      "idade": 28
+  }
+  ```
+
+#### b. Obter Todos os Usuários (GET)
+
+- **URL:** `http://localhost:3000/usuarios`
+- **Método:** GET
+
+#### c. Obter um Usuário Específico (GET)
+
+- **URL:** `http://localhost:3000/usuarios/Maria`
+- **Método:** GET
+
+#### d. Atualizar um Usuário (PUT)
+
+- **URL:** `http://localhost:3000/usuarios/Maria`
+- **Método:** PUT
+- **Corpo (JSON):**
+  ```json
+  {
+      "idade": 29
+  }
+  ```
+
+#### e. Deletar um Usuário (DELETE)
+
+- **URL:** `http://localhost:3000/usuarios/Maria`
+- **Método:** DELETE
+
+### 3. O que cada parte faz?
+
+- **POST** cria um novo usuário e o adiciona ao array.
+- **GET** sem parâmetros retorna todos os usuários.
+- **GET** com um nome retorna um usuário específico.
+- **PUT** atualiza os dados de um usuário existente.
+- **DELETE** remove um usuário do array.
+
+### 4. Conclusão
+
+Com esses exemplos, você agora tem uma API REST básica que pode criar, ler, atualizar e deletar usuários. Você pode expandir isso ainda mais, adicionando validações, autenticação ou conectando a um banco de dados real.
+
+Se precisar de mais ajuda ou exemplos, estou à disposição!
