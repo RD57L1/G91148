@@ -1,0 +1,159 @@
+/* Resetando a margem e o padding de todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Definindo o estilo do body */
+body {
+    margin: 0; /* Remove margem do corpo */
+    height: 100%; /* Faz o corpo ocupar toda a altura da tela */
+}
+
+/* Estilo do cabeçalho (header) */
+header {
+    background-image: url("../IMG/CSGO.png"); /* Define a imagem de fundo do cabeçalho */
+    display: flex; /* Usando flexbox para posicionar os elementos */
+    flex-direction: column; /* Organiza os itens em coluna */
+    width: 100%; /* Largura total da tela */
+    height: 200px; /* Altura do cabeçalho */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-repeat: no-repeat; /* Impede que a imagem de fundo se repita */
+    background-size: cover; /* Faz a imagem cobrir todo o espaço disponível */
+}
+
+/* Estilo da imagem dentro da classe logo */
+.logo img {
+    width: 150px; /* Redimensiona a imagem */
+    filter: brightness(1.5); /* Aplica um filtro de brilho à imagem */
+}
+
+/* Estilos para a lista de navegação (ul) */
+ul {
+    display: flex; /* Flexbox para posicionar os itens horizontalmente */
+    gap: 250px; /* Espaço entre os itens */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding da lista */
+    margin: 0; /* Remove a margem da lista */
+    padding-top: 80px; /* Espaço superior entre os itens */
+}
+
+/* Estilo para os itens da lista (li) */
+ul li {
+    border: 2px solid rgb(255, 255, 255); /* Adiciona uma borda branca aos itens */
+    border-radius: 50px; /* Arredonda os cantos dos itens */
+    background-color: rgba(228, 165, 71, 0.322); /* Define uma cor de fundo semi-transparente */
+    font-weight: bold; /* Deixa o texto em negrito */
+    text-decoration: none; /* Remove o sublinhado do texto */
+    margin-top: 10px; /* Adiciona um pequeno espaço superior */
+    padding: 5px 30px; /* Adiciona padding interno aos itens */
+}
+
+/* Estilo para os itens da lista quando o mouse passa por cima (hover) */
+ul li:hover {
+    background-color: rgba(128, 128, 128, 0.5); /* Muda a cor de fundo para um cinza transparente */
+    cursor: pointer; /* Muda o cursor para indicar que o item é clicável */
+    transform: scale(1.05); /* Aumenta o tamanho do item ao passar o mouse */
+}
+
+/* Estilo para os links dentro da lista */
+.menu {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: white; /* Define a cor dos links como branca */
+}
+
+/* Estilo do banner */
+section.banner {
+    background-image: url("../IMG/Anubis-CSGO.avif"); /* Define a imagem de fundo do banner */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    background-size: cover; /* Faz a imagem cobrir todo o espaço disponível */
+    height: 400px; /* Define a altura do banner */
+    width: 100%; /* Largura total da tela */
+}
+
+/* Estilo da seção container */
+section.container {
+    background-image: url("../IMG/308668609_500797988723771_4384190496720245457_n.png"); /* Imagem de fundo */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    background-size: cover; /* A imagem ocupa todo o espaço */
+    height: 400px; /* Define a altura da seção */
+    display: flex; /* Flexbox para organizar as seções internas */
+    width: 100%; /* Largura total da tela */
+}
+
+/* Estilo do título principal (h1) */
+h1 {
+    text-align: center; /* Centraliza o texto */
+    font-size: 25px; /* Define o tamanho da fonte */
+    font-family: 'Nosifer', cursive; /* Define a fonte personalizada */
+    color: rgb(255, 255, 255); /* Define a cor do texto como branca */
+    position: relative; /* Define a posição relativa para o título */
+    top: 20px; /* Ajusta a posição do título para baixo */
+}
+
+/* Estilo para a lista de jogadores */
+.jogadores {
+    text-align: center; /* Centraliza o texto */
+    font-size: 20px; /* Define o tamanho da fonte */
+    text-decoration: none; /* Remove o sublinhado */
+    color: rgb(247, 250, 250); /* Define a cor do texto */
+    margin-top: 30px; /* Adiciona um espaço superior */
+    background-color: rgba(73, 66, 66, 0.562); /* Fundo semi-transparente */
+    list-style-type: upper-roman; /* Define a numeração romana */
+    padding-left: 30px; /* Adiciona padding à esquerda */
+}
+
+/* Estilo para a seção à esquerda */
+.left50 {
+    width: 50%; /* Define que a seção ocupará 50% da largura */
+    background-image: url("../IMG/slide-arms.webp"); /* Imagem de fundo */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    background-size: cover; /* A imagem ocupa todo o espaço */
+    margin-top: 20px; /* Adiciona uma margem superior */
+}
+
+/* Estilo para o título secundário (h2) */
+h2 {
+    font-size: 20px; /* Define o tamanho da fonte */
+    color: rgb(255, 255, 255); /* Define a cor do texto como branca */
+    position: relative; /* Define a posição relativa para o título */
+    top: 20px; /* Ajusta a posição para baixo */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilo para a lista de skins */
+.skins {
+    font-size: 18px; /* Define o tamanho da fonte */
+    color: rgb(247, 250, 250); /* Cor do texto */
+    margin-top: 30px; /* Espaço superior */
+    font-weight: bold; /* Texto em negrito */
+    text-align: center; /* Centraliza o texto */
+    background-color: rgba(0, 0, 0, 0.363); /* Fundo semi-transparente */
+    padding-left: 30px; /* Adiciona padding à esquerda */
+    list-style-type: upper-roman; /* Define numeração romana */
+    display: flex; /* Flexbox para organizar os itens */
+    flex-direction: column; /* Organiza os itens em coluna */
+}
+
+/* Estilo para a seção à direita */
+.right50 {
+    width: 50%; /* Define a largura como 50% */
+    background-image: url("../IMG/CSGO-O-mercado-de-skins-do-Counter-Strike-e-a-sua-relevancia-no-cenario.png"); /* Imagem de fundo */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    background-size: cover; /* A imagem ocupa todo o espaço */
+    margin-top: 20px; /* Adiciona uma margem superior */
+}
+
+/* Estilo para o rodapé */
+footer {
+    background-color: aliceblue; /* Cor de fundo do rodapé */
+    display: flex; /* Flexbox para centralizar o conteúdo */
+    width: 100%; /* Largura total da tela */
+    height: 30px; /* Altura do rodapé */
+    align-items: center; /* Alinha os itens verticalmente */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+}

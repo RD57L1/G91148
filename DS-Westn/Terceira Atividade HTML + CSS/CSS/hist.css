@@ -1,0 +1,101 @@
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #f7f7f7;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #111;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .logo img {
+    width: 150px;
+    filter: brightness(1.5);
+}
+
+nav .menu {
+    margin-top: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style-type: none;
+}
+
+nav ul li {
+    font-weight: bold;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f7f7f7;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #f1a10a;
+}
+
+/* Seção de Introdução */
+.intro {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #1a1a1a;
+}
+
+.intro h1 {
+    font-size: 32px;
+    font-family: 'Nosifer', cursive;
+    color: #f7f7f7;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #f7f7f7;
+}
+
+/* Estilo das seções de História */
+.history {
+    padding: 30px 20px;
+    background-color: #222;
+    margin: 20px 0;
+}
+
+.history h2 {
+    font-size: 28px;
+    color: #f1a10a;
+    margin-bottom: 15px;
+}
+
+.history p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #f7f7f7;
+}
+
+/* Rodapé */
+footer {
+    background-color: #111;
+    text-align: center;
+    padding: 10px;
+    color: #f7f7f7;
+}
+
+footer p {
+    font-size: 14px;
+}
