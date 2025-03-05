@@ -1,0 +1,467 @@
+@font-face {
+    font-family: 'MinhaFontePersonalizada';
+    src: url('/FONTE/blood-crow.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+}
+
+header {
+    background: rgb(250, 0, 0);
+    background: radial-gradient(circle, rgba(250, 0, 0, 1) 0%, rgba(92, 9, 9, 1) 45%, rgba(0, 0, 0, 1) 100%);
+    display: flex;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    width: 100%;
+    height: 35vh;
+}
+
+.logo img {
+    width: 20%;
+    height: auto;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    filter: brightness(-100);
+}
+
+.menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25%;
+    justify-content: center;
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+    padding-top: 2%;
+}
+
+.menu ul li {
+    border: 2px solid rgb(19, 19, 19);
+    border-radius: 20px;
+    background-color: rgba(128, 128, 128, 0.5);
+    text-decoration: none;
+    padding: 5px 30px;
+}
+
+.menu ul li:hover {
+    background-color: rgba(128, 128, 128, 0.5);
+    transform: scale(1.2);
+    transition: transform 0.5s ease;
+}
+
+.menu ul li a {
+    font-family: 'MinhaFontePersonalizada', sans-serif;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(/IMG/Ban.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 120vh;
+}
+
+h1 {
+    font-size: 10vh;
+    font-family: 'MinhaFontePersonalizada', sans-serif;
+    color: white;
+    margin-top: 1%;
+    text-align: center;
+}
+
+h2 {
+    font-size: 4.5vh;
+    font-family: 'MinhaFontePersonalizada', sans-serif;
+    color: rgb(255, 255, 255);
+    margin-top: 6%;
+    align-self: flex-start;
+    margin-left: 3%;
+    background-color: hsla(0, 0%, 0%, 0.151);
+    border-radius: 10px;
+}
+
+.Sinopse {
+    font-size: 2.5vh;
+    font-family: 'MinhaFontePersonalizada', sans-serif;
+    color: white;
+    margin-top: 2%;
+    margin-left: 3%;
+    line-height: 1.5;
+    align-self: center;
+    background-color: hsla(0, 0%, 0%, 0.288);
+    border-radius: 10px;
+}
+
+.arco {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+    justify-content: center;
+    width: 100%;
+    margin-top: 3%;
+    list-style: none;
+}
+
+.arco li {
+    width: 40vh;
+    height: 60vh;
+    background-position: center;
+    background-size: cover;
+    border: 2px solid #fafafa00;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.363);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.arco li:hover {
+    box-shadow: 8px 8px 20px rgb(0, 0, 0);
+}
+
+.arco li::after {
+    content: attr(data-text);
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    transition: bottom 0.3s ease;
+    font-family: 'MinhaFontePersonalizada', sans-serif;
+}
+
+.arco li:hover::after {
+    bottom: 0;
+}
+
+.cap1 {
+    background-image: url(/IMG/Capa1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.cap2 {
+    background-image: url(/IMG/Capa2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.cap3 {
+    background-image: url(/IMG/Capa3.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.historia {
+    background: rgb(250, 0, 0);
+    background: radial-gradient(circle, rgba(250, 0, 0, 1) 0%, rgba(92, 9, 9, 1) 45%, rgba(0, 0, 0, 1) 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.historia_hash {
+    background: rgb(76, 97, 97);
+    background: linear-gradient(0deg, rgba(76, 97, 97, 1) 8%, rgba(0, 0, 0, 1) 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.his {
+    margin-top: 3%;
+}
+
+p {
+    font-size: 2.5vh;
+    font-family: 'MinhaFontePersonalizada', sans-serif;
+    color: white;
+    margin-top: 2%;
+    margin-left: 3%;
+    line-height: 1.5;
+    align-self: center;
+    background-color: hsla(0, 0%, 0%, 0.151);
+    border-radius: 10px;
+}
+
+
+.hashiras {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(/IMG/Design\ sem\ nome.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 230vh;
+}
+
+
+
+.hash1 {
+    background-image: url(/IMG/61-3936-20426.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 7vh;
+}
+
+.hash2 {
+    background-image: url(/IMG/Gyomei_anime_right_face.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.hash3 {
+    background-image: url(/IMG/Kyojuro_anime_right_face.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.hash4 {
+    background-image: url(/IMG/Mitsuri_anime_right_face.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.hash5 {
+    background-image: url(/IMG/Muichiro_anime_right_face.webp.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.hash6 {
+    background-image: url(/IMG/Obanai_anime_right_face.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.hash7 {
+    background-image: url(/IMG/Sanemi_anime_right_face.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.hash8 {
+    background-image: url(/IMG/Shinobu_anime_right_face.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.hash9 {
+    background-image: url(/IMG/Tengen_anime_right_face.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.hashiras {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(/IMG/Design\ sem\ nome.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 230vh;
+}
+
+.luas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(/IMG/7b35391afdbc2fc737c2d4988093a11f.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 2590px;
+}
+
+.lua1 {
+    background-image: url(/IMG/LUAS/Kokushibo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 7vh;
+}
+
+.lua2 {
+    background-image: url(/IMG/LUAS/Doma.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 7vh;
+}
+
+.lua3 {
+    background-image: url(/IMG/LUAS/Akaza.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 7vh;
+}
+
+.lua4 {
+    background-image: url(/IMG/LUAS/Nakime.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 7vh;
+}
+
+.lua5 {
+    background-image: url(/IMG/LUAS/Gyokko.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 7vh;
+}
+
+.lua6 {
+    background-image: url(/IMG/LUAS/Daki\ e\ Gyutaro.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 7vh;
+}
+
+.lua7 {
+    background-image: url(/IMG/LUAS/Enmu.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 7vh;
+}
+
+.lua8 {
+    background-image: url(/IMG/LUAS/Rui.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 7vh;
+}
+
+.lua9 {
+    background-image: url(/IMG/LUAS/Wakuraba.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 7vh;
+}
+
+.lua10 {
+    background-image: url(/IMG/LUAS/Mukago.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 7vh;
+}
+
+.lua11 {
+    background-image: url(/IMG/LUAS/Rokuro.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 7vh;
+}
+
+.lua12 {
+    background-image: url(/IMG/LUAS/Kamanue.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 7vh;
+}
+
+
+footer {
+    padding: 20px;
+    background: radial-gradient(circle, rgba(250, 0, 0, 1) 0%, rgba(92, 9, 9, 1) 45%, rgba(0, 0, 0, 1) 100%);
+    text-align: center;
+    color: white;
+}
+
+footer p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.redes-sociais a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.redes-sociais a:hover {
+    transform: scale(1.2);
+}
+
+.redes-sociais img {
+    width: 60px;
+    height: 55px;
+    filter: brightness(0) invert(1);
+    margin-top: 25px;
+}
