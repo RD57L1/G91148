@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+}
+
+header {
+    background-image: url('https://i.redd.it/ug04nv7al3941.jpg');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    width: 100%;
+}
+
+.logo img {
+    width: 100px;
+
+}
+
+nav {
+    background-image: radial-gradient(ellipse, rgb(255, 255, 255), rgba(55, 0, 255, 0.5));
+    margin-top: auto;
+    height: 40px;
+    border: 10px solid black;
+    padding: 0%;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px;
+}
+
+.menu {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.menu:hover {
+    color: rgb(47, 0, 255);
+}
+
+section.banner {
+    background-image: url('https://static1.srcdn.com/wordpress/wp-content/uploads/2024/04/solo-leveling-key-art.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    background-size: cover;
+}
+
+section.container {
+    background-image: radial-gradient(ellipse, rgb(68, 0, 255), rgb(98, 0, 255));
+    height: 350px;
+    display: flex;
+    width: 100%;
+}
+
+.servicos h1 {
+    text-align: center;
+    font-size: 5vh;
+    color: blueviolet;
+    margin-top: 2vh;
+    width: 100%; 
+}
+
+.servicos {
+
+    background: rgb(44, 0, 255);
+    background: radial-gradient(circle, rgba(44, 0, 255, 1) 0%, rgba(43, 56, 162, 1) 13%, rgba(50, 82, 78, 1) 42%, rgba(0, 0, 0, 1) 53%, rgba(1, 24, 65, 1) 85%);
+  
+    
+}
+
+.img1 {
+    display: flex; 
+    gap: 20px; 
+    justify-content: center; 
+    flex-wrap: wrap;
+}
+
+.img {
+    background: linear-gradient(to top, #000000, #1b3c63);
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    transition: all 0.4s;
+    position: relative;
+    border: 4px solid #00000000;
+    flex-direction: column;
+    display: flex;
+    width: 52vh;
+    height: 72vh; 
+    margin-bottom: 10vh; 
+}
+
+.img img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    border-bottom: 4px solid #2a0385;
+    border-radius: 20px;
+}
+
+.img p {
+    padding: 20px 20px 15px;
+    font-size: 1.2em;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    background: none;
+}
+
+.left50 {
+    width: 50%;
+    background-image: url('https://i0.wp.com/koreanmagazinebr.com/wp-content/uploads/2025/02/Novas-imagens-de-Solo-Leveling-mostram-os-soldados-sombrios-em-acao.jpg?fit=1280%2C720&ssl=1');
+    margin-top: 20px;
+}
+
+.right50 {
+    width: 50%;
+    background-image: url('https://pt.quizur.com/_image?href=https%3A%2F%2Fimg.quizur.com%2Ff%2Fimg608c17e655b053.35829078.png%3FlastEdited%3D1619793911&w=600&h=600&f=webp');
+    margin-top: 20px;
+    align-items: center;
+}
+
+footer {
+    background-color: aliceblue;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+
+
+
+}

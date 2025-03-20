@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'MinhaFontePersonalizada';
+    src: url('/FONTE/Thewitcher-jnOj.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*  
+body{
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+} */
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(/IMG/Header\ \(1\).png);
+    height: 380px;
+    justify-content: space-around
+}
+
+.logo img {
+    width: 25vh;
+    height: auto;
+    margin-top: 15%;
+}
+
+
+.menu ul {
+    display: flex;
+}
+
+.menu ul li {
+    list-style-type: none;
+    margin-right: 25px;
+    margin-left: 25px;
+    border: 5px solid rgb(216, 187, 22);
+    border-radius: 10px 0px;
+    padding: 10px;
+    background-color: rgba(255, 0, 0, 0.233);
+    box-shadow: 4px 4px rgba(87, 71, 71, 0.87);
+    font-weight: bold;
+}
+
+.menu ul :hover {
+    background-color: black;
+    box-shadow: 9px 9px rgba(0, 0, 0, 0.404);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(223, 223, 209);
+    background-image: url(/IMG/H1.png);
+    background-position: center;
+    font-family: 'MinhaFontePersonalizada', sans-serif;
+}
+
+.banner {
+    background-image: url(/IMG/wp5143620.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+}
+
+.nossahist {
+    width: 120vh;
+    height: 80vh;
+    border: 2px solid rgba(255, 255, 255, 0);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+h2 {
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    background-image: url(/IMG/H2.png);
+    background-position: center;
+    font-family: 'MinhaFontePersonalizada', sans-serif;
+}
+
+p {
+    font-size: 30px;
+    text-align: justify;
+    color: rgb(255, 255, 255);
+    background-image: url(/IMG/P.png);
+    background-position: center;
+    font-family: 'MinhaFontePersonalizada', sans-serif;
+}
+
+
+.banner2 {
+    background-image: url(/IMG/banner2.png);
+    background-size: cover;
+    background-position: end;
+    height: 90vh;
+}
+
+.curiosidade {
+    width: 120vh;
+    height: 80vh;
+    border: 2px solid rgba(255, 255, 255, 0);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    margin-left: auto;
+}
+
+h2 {
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    background-image: url(/IMG/H2.png);
+    background-position: center;
+    font-family: 'MinhaFontePersonalizada', sans-serif;
+}
+
+p {
+    font-size: 30px;
+    text-align: justify;
+    color: rgb(255, 255, 255);
+    background-image: url(/IMG/P.png);
+    background-position: center;
+    font-family: 'MinhaFontePersonalizada', sans-serif;
+}
+
+
+.lista li {
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.lista a {
+    list-style-type: none;
+    font-size: 25px;
+    text-align: justify;
+    color: rgb(255, 255, 255);
+    background-image: url(/IMG/P.png);
+    background-position: center;
+    font-family: 'MinhaFontePersonalizada', sans-serif;
+}
+
+.conteiner {
+    background-image: url(/IMG/the-witcher.jpg);
+    padding: 20vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.person{
+    width: 40vh;
+    height: 60vh;
+    background-position: center;
+    background-size: cover;
+    border: 0px solid #0e0d0d00;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.432);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.person:hover{
+    transform: scale(1.05);
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.733);
+}
+
+.person img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.person p{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.123);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: rgba(255, 255, 255, 0.842);
+    font-size: 25px;
+    text-align: center;
+}
+
+footer {
+    background-color: rgba(5, 5, 5, 0.952);
+    display: flex;
+    align-items: start;
+}
