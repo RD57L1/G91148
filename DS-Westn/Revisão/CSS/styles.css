@@ -1,0 +1,141 @@
+/* Resetando estilos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Corpo da página */
+body {
+    background-color: #1C1C1C; /* Fundo escuro para um visual futurista */
+    color: white;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0B3D91; /* Azul NASA */
+    padding: 15px 50px;
+}
+
+.logo img {
+    height: 80px;
+    width: auto;
+}
+
+/* Menu */
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.menu li {
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.menu li:hover {
+    background-color: #FC3D21; /* Vermelho NASA */
+}
+
+/* Seção principal */
+.banner2 {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+    gap: 10px;
+}
+
+.banner2 h1 {
+    color: #FC3D21; /* Vermelho NASA */
+    font-size: 36px;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.banner2 p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Formulário */
+form {
+    background-color: #0B3D91; /* Azul NASA */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 30px auto;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #FC3D21;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Botão */
+.button {
+    text-align: center;
+    margin-top: 15px;
+}
+
+button {
+    background-color: #FC3D21; /* Vermelho NASA */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: white;
+    color: #FC3D21;
+    border: 2px solid #FC3D21;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    background-color: #0B3D91; /* Azul NASA */
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+

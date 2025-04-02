@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+
+</head>
+<body>
+    <h1>BEM VINDO A MINHA CALCULADORA</h1>
+    <section class="calculadora">
+        <input type="text" id="display" readonly>
+        <section class="linha">
+            <button onclick="botaoNum(7)">7</button>
+            <button onclick="botaoNum(8)">8</button>
+            <button onclick="botaoNum(9)">9</button>
+            <button style="background-color: rgba(10, 17, 16, 0);" onclick="botaoOperador('/')">/</button>
+        </section>
+        <section class="linha">
+            <button onclick="botaoNum(6)">6</button>
+            <button onclick="botaoNum(5)">5</button>
+            <button onclick="botaoNum(4)">4</button>
+            <button style="background-color: rgba(10, 17, 16, 0);" onclick="botaoOperador('+')">+</button>
+        </section>
+        <section class="linha">
+            <button onclick="botaoNum(1)">1</button>
+            <button onclick="botaoNum(2)">2</button>
+            <button onclick="botaoNum(3)">3</button>
+            <button style="background-color: rgba(10, 17, 16, 0);"  onclick="botaoOperador('*')">X</button>
+        </section>
+        <section class="linha">
+            <button onclick="botaoNum('.')">.</button>
+            <button onclick="botaoNum(0)">0</button>
+            <button onclick= "calcular('=')">=</button>
+            <button style="background-color: rgba(0, 0, 0, 0);" onclick="botaoOperador('-')">-</button>
+        </section>
+     
+        <section >
+            <button class="clear" style="background-color: rgba(10, 17, 16, 0);" onclick="limpar()">CLEAR</button>
+            <button class="clear" style="background-color: rgba(10, 17, 16, 0);" onclick="apagar()">⭅</button>
+
+        </section>
+     
+        
+    </section>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Modo Claro */
+body.modo-claro {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Modo Escuro */
+body.modo-oscuro {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.3s;
+}
+
+header.modo-claro {
+    background-image: url('../IMG/mundo\ \(1920\ x\ 450\ px\).png');
+}
+
+header.modo-oscuro {
+    background-image: url('../IMG/mundoIV\ \(1920\ x\ 450\ px\).png');
+}
+
+.logo img {
+    width: 25vh;
+    height: auto;
+    margin-top: 15%;
+}
+
+#theme-toggle {
+    padding: 10px 20px;
+    background-color: #0000007a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    box-shadow: 4px 4px rgba(87, 71, 71, 0.87);
+    font-weight: bold;
+}
+
+#theme-toggle:hover {
+    background-color: #000000;
+    box-shadow: 6px 6px rgba(0, 0, 0, 0.404);
+    transition: 0.3s;
+    cursor: pointer;
+
+
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2.5rem;
+}
+
+section.nanner1 {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section.nanner1 h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+section.nanner1 p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+#formulario {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    border: solid 5px;
+    border-radius: 5px;
+}
+
+#formulario h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+#formulario label {
+    display: block;
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+#formulario input,
+#formulario textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#formulario button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #00000063;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+#formulario button:hover {
+    background-color: #000000;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: #333;
+    color: white;
+}
+
+body.modo-oscuro #formulario input,
+body.modo-oscuro #formulario textarea {
+    background-color: #333;
+    color: white;
+    border-color: #555;
+}
+
+body.modo-oscuro #formulario button {
+    background-color: #555;
+}
+
+body.modo-oscuro #formulario button:hover {
+    background-color: #777;
+}
+
+body.modo-oscuro footer {
+    background-color: #222;
+}
+
+.greeting {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #0e0e0e;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    z-index: 1000;
+}

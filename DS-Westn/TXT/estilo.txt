@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: rgb(9, 248, 41);
+    background-color: rgba(119, 0, 255, 0.521);
+    border-radius: 10px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url(https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/142064002/original/dcfa3b8bb848e48f66b63ff3e8bc4443ea145794/te-ayudo-con-problemas-de-matematicas.jpg);
+}
+
+.calculadora {
+    background: linear-gradient(0deg, rgb(81, 221, 0) 0%, rgba(149, 0, 255, 1) 100%, rgb(1, 191, 238) 50%);
+    border-radius: 5px;
+    margin: 20px auto;
+    width: 300px;
+    height: 400px;
+    padding: 20px;
+    box-shadow: 10px 10px 10px rgb(215, 0, 243);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+button {
+    width: 24%;
+    height: 65px;
+    border-radius: 5px;
+    transition: background-color 0.5s ease;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+button:hover {
+    background-color: blueviolet;
+    color: azure;
+}
+
+button.clear {
+    width: 49%;
+}
+
+input {
+    height: 75px;
+    background-color: rgb(0, 0, 0);
+    margin-bottom: 25px;
+    font-weight: 900;
+    font-size: 25px;
+    color: rgb(0, 248, 21);
+    font-family: 'Times New Roman', Times, serif;
+}

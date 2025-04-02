@@ -1,0 +1,148 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.header{
+    height: 100vh;
+    background-image: url('https://wallpapers.com/images/featured/mob-psycho-100-19021w8kyvh3xs4x.jpg');
+}
+
+.nav{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 7%;
+    background-color: purple;
+}
+
+.nav a{
+    text-decoration: none;
+    color: black;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    align-content: space-evenly;
+}
+
+nav ul li{
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.posicionamento-logo{
+    display: flex;
+    align-items: end;
+    height: 90%;
+}
+
+.logo{
+    width: 30%;
+    height: 30%;
+}
+
+.sobre{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+    height: 100vh;
+    background-color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.sobreM{
+    width: 100%;
+}
+
+.sobre p{
+    color: purple;
+    background-color: black;
+}
+
+.paragrafoP{
+    display: flex;
+    justify-content: center;
+}
+
+.paragrafo{
+    width: 50%;
+    margin-bottom: 10%;
+}
+
+.serie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: purple;
+    margin: 10% 0px 10% 0%;
+    font-size: 100px;
+}
+
+.purple{
+    width: 100%;
+    height: 70vh;
+    background-color: black;
+    color: purple;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.formh1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+.form1{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+    gap: 10px;
+    padding: 20px;
+}
+
+.formulario p{
+    display: flex;
+    gap: 5px;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+}
+
+.button{
+    display: flex;
+    gap: 10px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    color: purple;
+}

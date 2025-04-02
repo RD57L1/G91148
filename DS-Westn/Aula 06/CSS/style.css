@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 1000px) {
+    p {
+        color: rgb(0, 255, 0);
+    }
+}
+@media screen and (max-width: 768px) {
+    p {
+        color: rgb(255, 0, 0);
+    }
+}
+@media screen and (max-width: 400px) {
+    p {
+        color: rgb(0, 0, 255);
+    }
+}
+
+body {
+    text-align: center;
+}
+p {
+    font-size: 22pt;
+}
